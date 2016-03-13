@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand Sanitation dashboard</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css" media="screen">
+    {% block meta %}{% endblock %}
+    <style>
+        .number {
+            margin: -6px;
+            opacity:0.4;
+        }
+        .logo {
+            width: 40px;
+            float: left;
+            margin-top: -0px;
+        }
+        .box{
+            background-color: red;
+            padding: 10px;
+            margin: 10px;
+            min-height: 350px;
+            }
+        .name, .dirty-score, .dept{
+            text-align: center;
+        }
+        .king {
+            background-color: #f39c12 !important;
+            background-image:url('/static/crown_orange.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        .top{
+            background-color: green
+        }
+
+    </style>
+</head>
+<body>
+<img src="/static/web_logo.png" class="logo">
+<div style="float: right;">
+    <button type="button" class="btn btn-primary">
+        <a href="/">
+            Dashboard
+        </a>
+    </button>
+    <button type="button" class="btn btn-primary">
+        <a href="/profile">
+            Report
+        </a>
+    </button>
+    <button type="button" class="btn btn-default">
+        <a href="/admin/BeaconWorld/user">
+            Consultant
+        </a>
+    </button>
+</div>
+
+{% block content %}
+content
+{% endblock %}<br style="clear: both;">
+
+</body>
+</html>
